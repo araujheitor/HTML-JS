@@ -17,13 +17,15 @@
     pulaLinha()
  } 
 
- let pesoHeitor = 78
- let alturaHeitor = 1.71
+ function calcularIMC(peso, altura){
+     return imc = peso/(altura*altura)
+ }
 
- let imcHeitor = pesoHeitor/(alturaHeitor*alturaHeitor)
+ let imcHeitor = calcularIMC(78, 1.71)
 
- mostra(`O IMC de Heitor é ${imcHeitor}`) //template string
- mostra('O IMC de Heitor é ' + imcHeitor) //concatenação normal
+
+mostra("O IMC de Heitor é: " + imcHeitor)
+
     </script>
 </body>
 </html>
