@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Adivinhador de números </title>
+    <title>Tabuada 2</title>
 </head>
 <body>
-  <script>   
- function pulaLinha(){
+   <script>
+
+function pulaLinha(){
     document.write('<br><br>')
  }
 
@@ -17,16 +18,11 @@
     pulaLinha()
  } 
 
- let numeroSecreto = 7;
- 
- let chute = prompt('Qual o número secreto entre 0 e 10?')
+let tabuada = prompt(' Qual a tabuada você deseja?')
 
- if(numeroSecreto == chute){
-    mostra('Você acertou')
- } else {
-    mostra('Você errou')
- }
- 
- </script> 
+for(let multiplicador = 0; multiplicador <= 10; multiplicador++ ){
+    mostra(`${tabuada} x ${multiplicador} = ${multiplicador * tabuada}`)
+}
+   </script> 
 </body>
 </html>

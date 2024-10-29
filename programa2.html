@@ -8,7 +8,8 @@
 </head>
 <body>
     <script>
-        function pulaLinha(){
+
+function pulaLinha(){
     document.write('<br><br>')
  }
 
@@ -17,24 +18,25 @@
     pulaLinha()
  } 
 
- function calcularIMC(peso, altura){
-     return imc = peso/(altura*altura)
- }
+  function calcularIMC(peso, altura){
+   return imc = peso /(altura*altura)
+   
+  } 
 
- let nome = prompt('Qual o seu nome?')
- let alturaInformada = prompt(`${nome}, qual sua altura?`)
- let pesoInformado = prompt(`${nome}, qual seu peso?`)
+let nome = prompt('Qual os seu nome?')
+let alturaInformada = prompt(`${nome}, qual a sua altura? `)
+let pesoInformado = prompt(`${nome}, qual a sua peso? `)
 
- let imcCalculado = calcularIMC(pesoInformado, alturaInformada)
+let imcCalculado = calcularIMC(pesoInformado, alturaInformada)
 
- mostra(`${nome}, seu IMC é de ${imcCalculado}`)
+mostra(`${nome}, seu imc é ${imcCalculado}`)
 
 if(imcCalculado > 25){
-mostra(`${nome}, o seu IMC está acima do ideal.`)
-} else if(imcCalculado < 18){
+  mostra(`${nome}, o seu IMC está acima do ideal.`)
+} else if (imcCalculado < 18){
     mostra(`${nome}, o seu IMC está abaixo do ideal.`)
 } else {
-    mostra(`${nome}, o seu IMC está ideal`)
+  mostra(`${nome}, o seu IMC está ideal`)
 }
     </script>
 </body>
