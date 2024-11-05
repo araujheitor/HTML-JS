@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+
+
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font-titulo:"Kanit", sans-serif;
+    --font-texto:"Bebas Neue", sans-serif;
+    ---azul-escuro: #2b2d42ff;
+    --cinza-claro: #8d99aeff;
+    --branco: #edf2f4ff;
+    --vermelho-panetone: #ef233cff;
+    --vermelho-fogo: #d90429ff;
+    --preto: #000000;
+    --creme: #f2e8cfff;
+    --melao: #fec5bbff;
+    --mauve: #cfbaf0ff;
+    --roxo:  #9d4edd;
+    --russian-violet: #240046ff;
+    --blood-red: #660708ff;
+    --dodger-blue: #0496ffff;
+
+}
+
+body{
+    background-color: var(--branco);
+    font-family: var(--fonte-texto);
+}
+
+header{
+    background-color: var(--vermelho-panetone);
+    padding: 2em;
+    color: var(--blood-red);
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-size: 1.6em;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--vermelho-panetone);
+    padding: 1em;
+    text-align: center;
+    font-family: var(--font-texto);
+    font-size: 1.3em;
+    color: var(--blood-red)
+}
